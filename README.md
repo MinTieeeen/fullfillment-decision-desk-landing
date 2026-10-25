@@ -8,7 +8,7 @@ Pages: Home · Current model (`/business`) · Prototype (`/demo`) · Roadmap. Ro
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173/fulfillment-decision-desk/
+npm run dev      # http://localhost:5173/fullfillment-decision-desk-landing/
 npm test         # engine + workflow unit tests (incl. the 7 synthetic checks)
 npm run build    # type-check + production build into dist/
 ```
@@ -28,9 +28,9 @@ Expected numbers (asserted by tests): baseline 600 SEK; options 480 / 720 / 930 
 
 ## Deploy to GitHub Pages
 
-1. Create a repository named `fulfillment-decision-desk` (the name must match `base` in `vite.config.ts`).
-2. Push this folder to the `main` branch.
+1. Repository: `MinTieeeen/fullfillment-decision-desk-landing` (the name must match `base` in `vite.config.ts`).
+2. Push to the `master` branch.
 3. In the repository: **Settings → Pages → Source = GitHub Actions**.
-4. The workflow in `.github/workflows/deploy.yml` tests, builds and publishes to `https://<user>.github.io/fulfillment-decision-desk/`.
+4. The workflow in `.github/workflows/deploy.yml` tests, builds and publishes to `https://mintieeeen.github.io/fullfillment-decision-desk-landing/`.
 
 If the repository has a different name, change `base` in `vite.config.ts` to `'/<repo-name>/'`.
